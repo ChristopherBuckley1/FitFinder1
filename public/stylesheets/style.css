@@ -1,0 +1,255 @@
+@import url("//fonts.googleapis.com/css?family=Lobster|Cabin:400,700");
+
+body {
+  font-family: "Cabin", Arial, sans-serif;
+  color: #ffffff;
+  background-color: #ffffff;
+  padding-left:20%;
+  padding-right: 20%;
+}
+.card{margin-bottom:5%;}
+.container{
+  padding-left:20%;
+  padding-right: 20%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lobster', cursive;
+}
+
+.navbar {
+  background-color: #000000;
+  border-color: #000000;
+}
+
+.navbar-brand {
+  font-family: 'Lobster', cursive;
+}
+
+.banner {
+  margin-top: 4em;
+  border-bottom: 1px solid #ffffff;
+  margin-bottom: 1.5em;
+  padding-bottom: 0.5em;
+}
+
+h1 small {
+  color: rgb(0, 0, 0);
+}
+
+.card {
+  background-color: #ffffff;
+  
+}
+
+.card-primary {
+  border-color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.review-header {
+  background-color: #ffffff;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.review {
+  margin-right: -20px;
+  margin-left: -20px;
+  margin-bottom: 1em;
+}
+
+.badge-default, .btn-primary {
+  background-color: #000000;
+  border-color: #000000;
+}
+
+h4 a, h4 a:hover {
+  color: #fff;
+}
+
+h4 small {
+  font-size: 60%;
+  line-height: 200%;
+  color: #aaa;
+}
+
+.address {
+  margin-bottom: 0.5rem;
+}
+
+.facilities span.badge {
+  margin-right:2px;
+}
+
+legend {
+  font-family: 'Lobster', cursive;
+}
+
+#header.header-scrolled {
+  background: #fff;
+  padding: 20px 0;
+  height: 72px;
+  transition: all 0.5s;
+}
+#header {
+  padding: 30px 0;
+  height: 92px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  transition: all 0.5s;
+  z-index: 997;
+  background-color: #fff;
+  box-shadow: 5px 0px 15px #c3c3c3;
+}
+#header #logo h1 {
+  font-size: 34px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+#header #logo h1 a, #header #logo h1 a:hover {
+  color: #000;
+  padding-left: 10px;
+  border-left: 4px solid #044ccc;
+}
+#nav-menu-container {
+  float: right;
+  margin: 0;
+}
+.nav-menu > li {
+  margin-left: 10px;
+}
+.nav-menu > li {
+  float: left;
+}
+.nav-menu li {
+  position: relative;
+  white-space: nowrap;
+}
+.nav-menu, .nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.header-scrolled .nav-menu li:hover > a, .header-scrolled .nav-menu > .menu-active > a {
+  color: #044ccc;
+}
+.header-scrolled .nav-menu a {
+  color: black;
+}
+.nav-menu li:hover > a, .nav-menu > .menu-active > a {
+  color: #044ccc;
+}
+.nav-menu a {
+  padding: 0 8px 10px 8px;
+  text-decoration: none;
+  display: inline-block;
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  outline: none;
+}
+#mobile-nav-toggle {
+  display: inline;
+}
+#mobile-nav-toggle {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  margin: 20px 20px 0 0;
+  border: 0;
+  background: none;
+  font-size: 24px;
+  display: none;
+  transition: all 0.4s;
+  outline: none;
+  cursor: pointer;
+}
+#mobile-body-overly {
+  width: 100%;
+  height: 100%;
+  z-index: 997;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+body.mobile-nav-active #mobile-nav {
+  left: 0;
+}
+#mobile-nav {
+  position: fixed;
+  top: 0;
+  padding-top: 18px;
+  bottom: 0;
+  z-index: 998;
+  background: rgba(0, 0, 0, 0.8);
+  left: -260px;
+  width: 260px;
+  overflow-y: auto;
+  transition: 0.4s;
+}
+#mobile-nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+#mobile-nav ul li {
+  position: relative;
+}
+#mobile-nav ul li a {
+  color: #fff;
+  font-size: 13px;
+  text-transform: uppercase;
+  overflow: hidden;
+  padding: 10px 22px 10px 15px;
+  position: relative;
+  text-decoration: none;
+  width: 100%;
+  display: block;
+  outline: none;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+}
+#mobile-nav ul .menu-has-children i.fa-chevron-up {
+  color: #18d26e;
+}
+#mobile-nav ul .menu-has-children i {
+  position: absolute;
+  right: 0;
+  z-index: 99;
+  padding: 15px;
+  cursor: pointer;
+  color: #fff;
+}
+#mobile-nav ul .menu-item-active {
+  color: #18d26e;
+}
+#mobile-nav ul li li {
+  padding-left: 30px;
+}
+
+.menu-has-children ul
+{display: none;}
+
+
+@media (max-width: 768px){
+#nav-menu-container {
+  display: none;
+}
+
+#mobile-nav-toggle {
+  display: inline;
+}
+}
