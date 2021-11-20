@@ -1,0 +1,115 @@
+extends layout
+
+block content
+  h1= title
+   
+  
+        .row.banner
+          .col-12
+            h1 #{title} 
+            
+            small &nbsp;#{pageHeader.subtext}
+              
+        .row
+          .col-12.col-md-9
+
+            .card
+              .card-block
+                h4
+                  a(href="/") 
+                
+                  span.badge.badge-pill.badge-default.float-right #{card1.distance}m 
+                p.address #{card1.locationName}
+                .facilities
+                  span.badge.badge-warning #{card1.tags[0]}
+                  span.badge.badge-warning #{card1.tags[1]}
+                  span.badge.badge-warning #{card1.tags[2]}
+            
+            .card
+              .card-block
+                h4
+                  a(href="/location") 
+                  small &nbsp;
+                   
+                  span.badge.badge-pill.badge-default.float-right #{card2.distance}m
+                p.address #{card2.locationName}
+                .facilities
+                  span.badge.badge-warning #{card2.tags[0]}
+                  span.badge.badge-warning #{card2.tags[1]}
+                  span.badge.badge-warning #{card2.tags[2]}
+                  span.badge.badge-warning #{card2.tags[3]}
+                  span.badge.badge-warning #{card2.tags[4]}
+
+            .card
+              .card-block
+                h4
+                  a(href="/location") 
+                  small &nbsp;
+                    
+                  span.badge.badge-pill.badge-default.float-right #{card3.distance}m
+                p.address #{card3.locationName}
+                .facilities
+                  span.badge.badge-warning #{card3.tags[0]}
+                  span.badge.badge-warning #{card3.tags[1]} 
+                  span.badge.badge-warning #{card3.tags[2]}
+                  span.badge.badge-warning #{card3.tags[3]}
+                  span.badge.badge-warning #{card3.tags[4]}
+                  span.badge.badge-warning #{card3.tags[5]}
+                  span.badge.badge-warning #{card3.tags[6]}
+
+
+            .card
+              .card-block
+                h4
+                  a(href="/location") 
+                  small &nbsp;
+                   
+                  span.badge.badge-pill.badge-default.float-right #{card4.distance}m
+                p.address #{card4.locationName}
+                .facilities
+                  span.badge.badge-warning #{card4.tags[0]}
+                  span.badge.badge-warning   #{card4.tags[1]}
+                  span.badge.badge-warning  #{card4.tags[2]}
+            .card
+              .card-block
+                h4
+                  a(href="/location") 
+                  small &nbsp;
+                   
+                  span.badge.badge-pill.badge-default.float-right #{card5.distance}m
+                p.address #{card5.locationName}
+                .facilities
+                  span.badge.badge-warning #{card5.tags[0]}
+                  span.badge.badge-warning   #{card5.tags[1]}
+                  span.badge.badge-warning  #{card5.tags[2]}
+            .card
+              .card-block
+                h4
+                  a(href="/location") 
+                  small &nbsp;
+                   
+                  span.badge.badge-pill.badge-default.float-right #{card6.distance}m
+                p.address #{card6.locationName}
+                .facilities
+                  span.badge.badge-warning #{card6.tags[0]}
+                  span.badge.badge-warning #{card6.tags[1]}
+                  span.badge.badge-warning #{card6.tags[2]}
+
+                 
+            .card 
+              .card-block 
+               h4 
+                 a(href="/location")
+                 small &nbsp;
+
+                 span.badge.badge-pill.badge-default.float-right #{card7.distance}m
+               p.address #{card7.locationName}
+               .facilities 
+                span.badge.badge-warning  #{card7.tags[0]}
+                span.badge.badge-warning  #{card7.tags[1]}
+                span.badge.badge-warning  #{card7.tags[2]}
+
+
+
+
+

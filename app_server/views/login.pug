@@ -1,0 +1,36 @@
+extends layout 
+
+block content
+ br 
+ br
+ br
+ br
+ br
+ br
+ .container
+  .row.justify-content-center
+    .col-md-8
+      .card
+        .card-header Log in
+        .card-body
+          form.form-horizontal(method='post' action='#')
+            .form-group
+              
+              .cols-sm-10
+                .input-group
+                  span.input-group-addon
+                    
+                  input#name.form-control(type='text' name='Username' placeholder='Enter your Username')
+            .form-group
+              
+              .cols-sm-10
+                .input-group
+                  span.input-group-addon
+                   
+                  input#email.form-control(type='text' name='Password' placeholder='Enter your Password')
+              br
+              br
+              button.btn.btn-primary.btn-lg.btn-block.login-button(type='button') Log in
+              
+            .login-register
+            //-https://bootsnipp.com/snippets/Q68og - form taken from here
