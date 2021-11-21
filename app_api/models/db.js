@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const dbURI = "mongodb+srv://chris:krn1iyvC!q88@fitfinder.0f1xr.mongodb.net/fitfinder";
+const dbURI = "mongodb+srv://admin:admin@loc8r.atgil.mongodb.net/fitfinder?retryWrites=true&w=majority";
 
 try {
    

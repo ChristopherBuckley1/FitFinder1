@@ -5,9 +5,14 @@ const ctrlGyms = require('../controllers/gyms');
 
 // locations
 router
-  .route('/locations')
+  .route('/gym')
   .get(ctrlGyms.loadGyms)
-  .post(ctrlGyms.locationsCreate);
+
+router
+  .route('/gyms/:gymid')
+  .get(ctrlGyms.gymsReadOne)
+ 
+
 
 
 

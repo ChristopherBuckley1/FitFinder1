@@ -27,3 +27,5 @@ const gymSchema = new mongoose.Schema({
     kidFriendly: Boolean
 
 });
+
+mongoose.model('Gym', gymSchema);
