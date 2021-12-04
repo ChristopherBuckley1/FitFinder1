@@ -38,12 +38,33 @@ const gymsReadOne = function (req, res) {
           });		
       }
     };
+
+
+const _loadGymList = function(req, res, results) {
+      let gyms = [];
+      results.forEach((doc) => {
+        gyms.push({
+          locationName: doc.locationName,
+          tags: doc.tags,
+          distance: doc.distance,
+          address: doc.address,
+          kidFriendly: doc.kidFriendly,
+          _id: doc._id
+        });
+      });
+      return gyms;
+  };
     
 const loadGyms = function (req, res) {
+  Gym.find({},function(err, results){
+    console.log(results);
+    const gyms = _loadGymList(req, res, results);
+    
     res
-.status(200)
-.json({"status" : "success"});
-
+    .status(200)
+    .json(gyms);
+    
+    })
  };
 const locationsUpdateOne = function (req, res) {
     res
