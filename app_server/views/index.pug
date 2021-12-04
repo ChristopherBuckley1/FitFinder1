@@ -15,11 +15,16 @@ block content
             each gym in gyms
               .card
                 .card-block
-                  h4= gym.locationName
+                  h4= gym.address
                     a(href="/") 
                   
                     span.badge.badge-pill.badge-default.float-right= gym.distance + "m" 
-                  p.address= gym.distance
+                  p= gym.locationName
+
+                    each tag in gym.tags
+                      span.badge.badge-pill.badge-default.float-right= tag 
+
+
                   
             
            
