@@ -49,6 +49,7 @@ const _loadGymList = function(req, res, results) {
           distance: doc.distance,
           address: doc.address,
           kidFriendly: doc.kidFriendly,
+          openingTimes: doc.openingTimes,
           _id: doc._id
         });
       });

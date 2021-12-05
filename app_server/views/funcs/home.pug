@@ -1,0 +1,16 @@
+mixin displayChildFriendly(childFriendly)
+        unless !childFriendly
+            .green.badge.badge-pill.badge-default.float-right Child Friendly!
+
+mixin displayOpeningTimes(openingTimes)
+    each time in openingTimes
+        p.opening
+        | #{time.days} : 
+        if time.closed
+          | closed
+        else
+            | #{time.opening} - #{time.closing}
+
+mixin displayTags(tags)
+    each tag in tags
+        badge.badge.badge-pill.badge-default.float-right= tag 

@@ -3,7 +3,9 @@ const rq = require('request');
 
 const apiOptions = { 
     server : 'http://localhost:3000' 
-    }; 
+    };
+
+
 
 
 const _renderhomepage = function(req, res, responseBody)

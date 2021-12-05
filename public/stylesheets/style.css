@@ -1,5 +1,5 @@
 @import url("//fonts.googleapis.com/css?family=Lobster|Cabin:400,700");
-
+.opening{font-size:17px;}
 body {
   font-family: "Cabin", Arial, sans-serif;
   color: #ffffff;
@@ -7,7 +7,9 @@ body {
   padding-left:20%;
   padding-right: 20%;
 }
-.card{margin-bottom:5%;}
+.card{margin-bottom:5%;padding:1.5%;}
+.card-text{font-size:11px;}
+.green.badge.badge-pill.badge-default.float-right {background-color: #18d26e;}
 .container{
   padding-left:20%;
   padding-right: 20%;
