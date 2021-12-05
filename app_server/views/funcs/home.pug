@@ -14,3 +14,20 @@ mixin displayOpeningTimes(openingTimes)
 mixin displayTags(tags)
     each tag in tags
         badge.badge.badge-pill.badge-default.float-right= tag 
+
+mixin loadGyms(gym)
+    each gym in gyms
+              .card
+                .card-block
+                  h2= gym.locationName
+    
+                  .opening
+                    p= gym.address
+
+                    +displayOpeningTimes(gym.openingTimes)
+
+                  badge.badge.badge-pill.badge-default.float-right= gym.distance + "m"                   
+                  
+                  +displayTags(gym.tags)
+                  
+                  +displayChildFriendly(gym.kidFriendly)
