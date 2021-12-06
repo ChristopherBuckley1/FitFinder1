@@ -2,7 +2,7 @@ const rq = require('request');
 
 
 const apiOptions = { 
-    server : 'fitfinder-chris.herokuapp.com' 
+    server : 'http://localhost:3000' 
     };
 if (process.env.NODE_ENV === 'production') { 
         apiOptions.server = 'fitfinder-chris.herokuapp.com'; 
@@ -33,15 +33,16 @@ const home = function(req,res){
     const requestOptions = { 
 
     url : apiOptions.server + path, 
-
+    
     method : 'GET', 
 
     json : {} 
 
     };
-
+    console.log(url);
     rq(requestOptions, (err, response, body) => { 
         _renderhomepage(req, res,body); 
+
         } );
     
 };
