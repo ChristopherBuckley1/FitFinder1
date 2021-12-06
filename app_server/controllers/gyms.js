@@ -2,7 +2,7 @@ const rq = require('request');
 
 
 const apiOptions = { 
-    server : 'http://localhost:3000' 
+    server : 'fitfinder-chris.herokuapp.com' 
     };
 if (process.env.NODE_ENV === 'production') { 
         apiOptions.server = 'fitfinder-chris.herokuapp.com'; 
