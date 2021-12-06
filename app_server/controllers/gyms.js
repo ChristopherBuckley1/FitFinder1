@@ -21,9 +21,7 @@ const _renderhomepage = function(req, res, responseBody)
                 subtext: 'Your gateway to fitness'
             },
 
-            gyms: responseBody,
-            
-            openingTimes: responseBody.openingTimes        
+            gyms: responseBody
 
         });
 
