@@ -12,7 +12,7 @@ if (process.env.NODE_ENV === 'production') {
 
 
 const _renderhomepage = function(req, res, responseBody)
-{
+{   console.log(responseBody);
     res.render('index', 
         { title: 'Fitfinder', 
 
@@ -21,7 +21,10 @@ const _renderhomepage = function(req, res, responseBody)
                 subtext: 'Your gateway to fitness'
             },
 
-            gyms: responseBody
+            gyms: responseBody,
+            
+            openingTimes: responseBody.openingTimes        
+
         });
 
 };
