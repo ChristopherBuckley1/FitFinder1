@@ -40,7 +40,7 @@ const home = function(req,res){
     json : {} 
 
     };
-    console.log(url);
+    
     rq(requestOptions, (err, response, body) => { 
         _renderhomepage(req, res,body); 
 
