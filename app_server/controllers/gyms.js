@@ -3,16 +3,17 @@ const rq = require('request');
 
 const apiOptions = { 
     server : 'http://localhost:3000' 
-    };
+};
+
 if (process.env.NODE_ENV === 'production') { 
-        apiOptions.server = 'fitfinder-chris.herokuapp.com/'; 
+        apiOptions.server = 'fitfinder-chris.herokuapp.com'; 
 }
 
 
 
 
 const _renderhomepage = function(req, res, responseBody)
-{
+{   console.log(responseBody);
     res.render('index', 
         { title: 'Fitfinder', 
 
@@ -22,6 +23,7 @@ const _renderhomepage = function(req, res, responseBody)
             },
 
             gyms: responseBody
+
         });
 
 };
@@ -32,15 +34,16 @@ const home = function(req,res){
     const requestOptions = { 
 
     url : apiOptions.server + path, 
-
+    
     method : 'GET', 
 
     json : {} 
 
     };
-
+    console.log(url);
     rq(requestOptions, (err, response, body) => { 
         _renderhomepage(req, res,body); 
+
         } );
     
 };
