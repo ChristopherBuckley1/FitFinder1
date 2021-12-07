@@ -1,58 +1,8 @@
 extends layout 
 
 block content 
- br 
- br
- br
- br
- br
- br
- br
- .container
-  .row.justify-content-center
-    .col-md-8
-      .card
-        .card-header Register
-        .card-body
-          form.form-horizontal(method='post' action='#')
-            .form-group
-              
-              .cols-sm-10
-                .input-group
-                  span.input-group-addon
-                    
-                  input#name.form-control(type='text' name='name' placeholder='Enter your Name')
-            .form-group
-              
-              .cols-sm-10
-                .input-group
-                  span.input-group-addon
-                   
-                  input#email.form-control(type='text' name='email' placeholder='Enter your Email')
-            .form-group
-              
-              .cols-sm-10
-                .input-group
-                  span.input-group-addon
-                   
-                  input#username.form-control(type='text' name='username' placeholder='Enter your Username')
-            .form-group
-              
-              .cols-sm-10
-                .input-group
-                  span.input-group-addon
-                   
-                  input#password.form-control(type='password' name='password' placeholder='Enter your Password')
-            .form-group
-              
-              .cols-sm-10
-                .input-group
-                  span.input-group-addon
-                    
-                  input#confirm.form-control(type='password' name='confirm' placeholder='Confirm your Password')
-            .form-group
-              button.btn.btn-primary.btn-lg.btn-block.login-button(type='button') Register
-            .login-register
-            
-
-            //- https://bootsnipp.com/snippets/Q68og - form from here
+      app-home-list Loading
+block scripts
+  script(src='/build/runtime.9518cb2843c2365f.js')
+  script(src='/build/polyfills.fbdbecd84dc13572.js')
+  script(src='/build/main.9ab2133c4f9bae23.js')
