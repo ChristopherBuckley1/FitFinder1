@@ -2,6 +2,10 @@ mixin displayChildFriendly(childFriendly)
         unless !childFriendly
             .green.badge.badge-pill.badge-default.float-right Child Friendly!
 
+
+
+
+
 mixin displayOpeningTimes(openingTimes)
     each time in openingTimes
         p.opening
@@ -11,9 +15,16 @@ mixin displayOpeningTimes(openingTimes)
         else
             | #{time.opening} - #{time.closing}
 
+
+
+
 mixin displayTags(tags)
     each tag in tags
         badge.badge.badge-pill.badge-default.float-right= tag 
+
+
+
+
 
 mixin loadGyms(gyms)
     each gym in gyms
