@@ -1,19 +1,12 @@
 const mongoose = require('mongoose');
 const Gym = mongoose.model('Gym');
 
-
-const locationsCreate = function (req, res) { 
-    res
-.status(200)
-.json({"statuss" : "success"});
-
-};
 const gymsReadOne = function (req, res) {
     if (req.params && req.params.gymid) {  
         Gym
           .findById(req.params.gymid)
-          .exec((err, location) => {
-            if (!location) {
+          .exec((err, gym) => {
+            if (!gym) {
               res	
                 .status(404) 
                 .json({	
@@ -28,7 +21,7 @@ const gymsReadOne = function (req, res) {
             }
             res		
               .status(200)
-              .json(location);
+              .json(gym);
           });
       } else {		
         res		
@@ -38,7 +31,6 @@ const gymsReadOne = function (req, res) {
           });		
       }
     };
-
 
 const _loadGymList = function(req, res, results) {
       let gyms = [];
@@ -67,21 +59,10 @@ const loadGyms = function (req, res) {
     
     })
  };
-const locationsUpdateOne = function (req, res) {
-    res
-.status(200)
-.json({"status" : "success"});
 
- };
-const locationsDeleteOne = function (req, res) {res
-    .status(200)
-    .json({"status" : "success"});
-     };
 
 module.exports = {
   loadGyms,
-  locationsCreate,
   gymsReadOne,
-  locationsUpdateOne,
-  locationsDeleteOne
+  
 };
